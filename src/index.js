@@ -11,8 +11,6 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 
 import { BrowserRouter } from 'react-router-dom'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-
 // 2
 const httpLink = new HttpLink({ uri: 'http://104.236.41.59/graphql' })
 
@@ -25,11 +23,9 @@ const client = new ApolloClient({
 // 4
 ReactDOM.render(
   <BrowserRouter>
-  <MuiThemeProvider>
     <ApolloProvider client={client}>
       <App />
     </ApolloProvider>
-    </MuiThemeProvider>
   </BrowserRouter>
   , document.getElementById('root')
 )

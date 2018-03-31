@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
 
-/* class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <div className="flex pa1 justify-between nowrap orange">
@@ -19,21 +19,6 @@ import { withRouter } from 'react-router'
       </div>
     )
   }
-} */
+}
 
-import AppBar from 'material-ui/AppBar';
-
-/**
- * A simple example of `AppBar` with an icon on the right.
- * By default, the left icon is a navigation-menu.
- */
-const AppBar = () => (
-  <AppBar
-    title="Title"
-    iconClassNameRight="muidocs-icon-navigation-expand-more"
-  >
-  Departments
-  </AppBar>
-);
-
-export default withRouter(AppBar)
+export default withRouter(Header)
